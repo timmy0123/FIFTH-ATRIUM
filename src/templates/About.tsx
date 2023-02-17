@@ -33,7 +33,9 @@ export const About: React.FC = () => (
 
         <Box sx={{ fontSize: 35, width: "45%"}}> So</Box>
         <Box display="flex" justifyContent="right"> 
-            <Box sx={{ fontSize: 25, width:"30%"}}>Come plant your ideas with Fifth Atrium and see them spring to life!</Box>
+            <Box sx={{ fontSize: 20, width:"25%"}}>Come plant your ideas with Fifth Atrium and see them spring to life!</Box>
         </Box>
+        <Box />
+        <Box />
     </Stack>
 );
