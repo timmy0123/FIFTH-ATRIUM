@@ -6,22 +6,22 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import Divider from '@mui/material/Divider';
 import Link from "next/link";
 import Image from "next/image";
-import im1 from "../../picture/1.jpg";
-import im2 from "../../picture/2.jpg";
-import im3 from "../../picture/3.jpg";
-import im4 from "../../picture/4.jpg";
-import im5 from "../../picture/5.jpg";
-import im6 from "../../picture/6.jpg";
-import im7 from "../../picture/7.jpg";
-import im8 from "../../picture/8.jpg";
-import im9 from "../../picture/9.jpg";
-import im10 from "../../picture/10.jpg";
-import im11 from "../../picture/11.jpg";
-import im12 from "../../picture/12.jpg";
-import im13 from "../../picture/13.jpg";
-import im14 from "../../picture/14.jpg";
-import im15 from "../../picture/15.jpg";
-import im16 from "../../picture/16.jpg";
+import im1 from "../../picture/1.png";
+import im2 from "../../picture/2.png";
+import im3 from "../../picture/3.png";
+import im4 from "../../picture/4.png";
+import im5 from "../../picture/5.png";
+import im6 from "../../picture/6.png";
+import im7 from "../../picture/7.png";
+import im8 from "../../picture/8.png";
+import im9 from "../../picture/9.png";
+import im10 from "../../picture/10.png";
+import im11 from "../../picture/11.png";
+import im12 from "../../picture/12.png";
+import im13 from "../../picture/13.png";
+import im14 from "../../picture/14.png";
+import im15 from "../../picture/15.png";
+import im16 from "../../picture/16.png";
 
 export const Project: React.FC = () => (
     <Stack spacing={5}>
