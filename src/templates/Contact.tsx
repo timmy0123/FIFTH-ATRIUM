@@ -4,7 +4,7 @@ import Divider from '@mui/material/Divider';
 import Link from "next/link";
 
 export const Contact: React.FC = () => (
-    <Stack spacing={5}>
+    <Stack spacing={5} sx={{ bgcolor: '#EF4122' }}>
         <Box></Box>
         <Box display="flex" justifyContent="center">
             <Link href={"mailto:hello@fifthatrium.com"}>
