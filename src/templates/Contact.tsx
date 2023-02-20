@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { Box, Stack, Typography  } from "@mui/material";
+import { Box, Stack, Typography, Grid  } from "@mui/material";
 import Divider from '@mui/material/Divider';
 import Link from "next/link";
 
 export const Contact: React.FC = () => (
-    <Stack spacing={5} sx={{ bgcolor: '#EF4122' }}>
-        <Box></Box>
+    <Stack sx={{ bgcolor: '#EF4122' }}>
+    <Box marginTop={10} marginBottom={4} marginX={6}>
+    <Stack spacing={5}>
         <Box display="flex" justifyContent="center">
             <Link href={"mailto:hello@fifthatrium.com"}>
                 <Typography sx={{textDecoration: 'underline', fontSize: 40}}>hello@fifthatrium.com</Typography>
@@ -24,5 +25,7 @@ export const Contact: React.FC = () => (
                 <Divider sx={{ borderWidth: 1.5, width:"1400px"}} />
             </Stack>
         </Box>
+    </Stack>
+    </Box>
     </Stack>
 )

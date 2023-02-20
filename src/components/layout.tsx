@@ -12,7 +12,7 @@ export const Layout: React.FC<ILayoutProps> = ({children}) => (
         <Head><title>TITH ARTIUM</title></Head>
         <Header />
         <main>
-        <div className="container">{children}</div>
+        <div>{children}</div>
         </main>
         <Footer />
     </>
