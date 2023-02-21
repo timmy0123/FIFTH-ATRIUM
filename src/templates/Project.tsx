@@ -59,31 +59,31 @@ export const Project: React.FC = () => {
         <Box marginX={2} marginY={10}>
         <Stack spacing={10}>
             <Grid container>
-                <Grid lg={4.8} xl={4.8}><a></a></Grid>
-                <Grid lg={7} xl={7}>
+                <Grid item xs={4.8} sm={4.8} md={4.8} lg={4.8} xl={4.8}><a></a></Grid>
+                <Grid item xs={7} sm={7} md={7} lg={7} xl={7}>
                     <Box display="flex" justifyContent="left" sx={{ fontSize: 50, color:"#EF4122"}}> 
                         LIFE IS
                     </Box>
                 </Grid>
-                <Grid lg={5.25} xl={5.25}><a></a></Grid>
-                <Grid lg={6} xl={6}>
+                <Grid item xs={5.25} sm={5.25} md={5.25}  lg={5.25} xl={5.25}><a></a></Grid>
+                <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
                     <Box display="flex" justifyContent="left" sx={{ fontSize: 50, color:"#EF4122"}}>
                         OUR STORIES
                     </Box>
                 </Grid>
-                <Grid lg={5} xl={5}><a></a></Grid>
-                <Grid lg={7} xl={7}>
+                <Grid item xs={5} sm={5} md={5} lg={5} xl={5}><a></a></Grid>
+                <Grid item xs={7} sm={7} md={7} lg={7} xl={7}>
                     <Box display="flex" justifyContent="left" sx={{ fontSize: 50, color:"#EF4122"}}>
                         AND
                     </Box>
                 </Grid>
-                <Grid lg={12} xl={12}>
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                     <Box display="flex" justifyContent="center" sx={{ fontSize: 50, color:"#EF4122"}}>
                         WE BRING YOUR STORY
                     </Box>
                 </Grid>
-                <Grid lg={6.5} xl={6.5}><a></a></Grid>
-                <Grid lg={5} xl={5}>
+                <Grid item xs={6.5} sm={6.5} md={6.5} lg={6.5} xl={6.5}><a></a></Grid>
+                <Grid item xs={5} sm={5} md={5}  lg={5} xl={5}>
                     <Box display="flex" justifyContent="left" sx={{ fontSize: 50, color:"#EF4122"}}>
                         To LIFE
                     </Box>
@@ -92,8 +92,8 @@ export const Project: React.FC = () => {
 
 
             <Grid container>
-                <Grid lg={1} xl={1}><a></a></Grid>
-                <Grid lg={5} xl={5}>
+                <Grid item xs={1} sm={1} md={1} lg={1} xl={1}><a></a></Grid>
+                <Grid item xs={11} sm={11} md={11} lg={5} xl={5}>
                     <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                         <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                         <Box sx={{ fontSize: 35}}>
@@ -101,8 +101,8 @@ export const Project: React.FC = () => {
                         </Box>
                     </Stack>
                 </Grid>
-                <Grid lg={1} xl={1}><a></a></Grid>
-                <Grid lg={5} xl={5}>
+                <Grid item xs={4} sm={4} md={4} lg={1} xl={1}><a></a></Grid>
+                <Grid item xs={8} sm={8} md={8} lg={5} xl={5}>
                     <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                         <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                         <Box sx={{ fontSize: 35}}>
@@ -112,8 +112,8 @@ export const Project: React.FC = () => {
                 </Grid>
 
 
-                <Grid lg={1.5} xl={1.5}><a></a></Grid>
-                <Grid lg={3} xl={3}>
+                <Grid item xs={2} sm={2} md={2} lg={1.5} xl={1.5}><a></a></Grid>
+                <Grid item xs={10} sm={10} md={10} lg={3} xl={3}>
                     <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                         <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                         <Box sx={{ fontSize: 35}}>
@@ -121,8 +121,8 @@ export const Project: React.FC = () => {
                         </Box>
                     </Stack>
                 </Grid>
-                <Grid lg={2} xl={2}><a></a></Grid>
-                <Grid lg={5.5} xl={5.5}>
+                <Grid item xs={1} sm={1} md={1} lg={2} xl={2}><a></a></Grid>
+                <Grid item xs={11} sm={11} md={11} lg={5.5} xl={5.5}>
                     <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                         <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                         <Box sx={{ fontSize: 35}}>
@@ -132,8 +132,8 @@ export const Project: React.FC = () => {
                 </Grid>
 
 
-                <Grid lg={1} xl={1}><a></a></Grid>
-                <Grid lg={3} xl={3}>
+                <Grid item xs={1} sm={1} md={1} lg={1} xl={1}><a></a></Grid>
+                <Grid item xs={11} sm={11} md={11} lg={3} xl={3}>
                     <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                         <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                         <Box sx={{ fontSize: 35}}>
@@ -141,8 +141,8 @@ export const Project: React.FC = () => {
                         </Box>
                     </Stack>
                 </Grid>
-                <Grid lg={2} xl={2}><a></a></Grid>
-                <Grid lg={6} xl={6}>
+                <Grid item xs={3} sm={3} md={3} lg={2} xl={2}><a></a></Grid>
+                <Grid item xs={9} sm={9} md={9} lg={6} xl={6}>
                     <Stack display="flex" justifyContent="cleftenter" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                         <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                         <Box sx={{ fontSize: 35}}>
@@ -152,8 +152,8 @@ export const Project: React.FC = () => {
                 </Grid>
 
 
-                <Grid lg={1.5} xl={1.5}><a></a></Grid>
-                <Grid lg={4.5} xl={4.5}>
+                <Grid item sm={1} md={1} lg={1.5} xl={1.5}><a></a></Grid>
+                <Grid item sm={11} md={11} lg={4.5} xl={4.5}>
                     <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                         <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                         <Box sx={{ fontSize: 35}}>
@@ -161,8 +161,8 @@ export const Project: React.FC = () => {
                         </Box>
                     </Stack>
                 </Grid>
-                <Grid lg={2} xl={2}><a></a></Grid>
-                <Grid lg={4} xl={4}>
+                <Grid item sm={5} md={5} lg={2} xl={2}><a></a></Grid>
+                <Grid item sm={7} md={7} lg={4} xl={4}>
                     <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                         <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                         <Box sx={{ fontSize: 35}}>
@@ -170,8 +170,8 @@ export const Project: React.FC = () => {
                         </Box>
                     </Stack>
                 </Grid>
-                <Grid lg={1} xl={1}><a></a></Grid>
-                <Grid lg={6} xl={6}>
+                <Grid item sm={4} md={4} lg={1} xl={1}><a></a></Grid>
+                <Grid item sm={8} md={8} lg={6} xl={6}>
                 <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                     <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                     <Box sx={{ fontSize: 35}}>
@@ -182,27 +182,25 @@ export const Project: React.FC = () => {
             </Grid>
 
 
-            <Grid container spacing={3}>
-                <Grid lg={3} xl={3}>
+            <Grid container justifyContent="space-between" alignItems="center" rowSpacing={2}>
+                <Grid item xs={12} sm={12} md={6} lg={2.8} xl={2.8}>
                     <Stack spacing={1}>
-                        <Box display="flex" justifyContent="left">
-                            <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"#EF4122"}} />
-                        </Box>
+                        <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"#EF4122"}} />
                         <Box display="flex" justifyContent="left" sx={{ fontSize: 30, color:"#EF4122"}}>
                             BRAND
                         </Box>
                         <Box display="flex" justifyContent="left" sx={{ fontSize: 30, color:"#EF4122"}}>
                             IDENTITY
                         </Box>
-                        <Box display="flex" justifyContent="left">
-                            <Divider sx={{ borderBottomWidth: 3, width:"98%", borderColor:"#EF4122"}} />
-                        </Box>
+                        
+                        <Divider sx={{ borderBottomWidth: 3, width:"98%", borderColor:"#EF4122"}} />
+                        
                         <Box display="flex" justifyContent="left">
                             <Image src={im1} alt="" style={{ width: '98%', height: 'auto' }}/>
                         </Box>
                     </Stack>
                 </Grid>
-                <Grid lg={3} xl={3}>
+                <Grid item xs={12} sm={12} md={6} lg={2.8} xl={2.8}>
                     <Stack spacing={1}>
                         <Box display="flex" justifyContent="right">
                             <Link href="https://www.instagram.com/fifthatrium/">
@@ -217,21 +215,19 @@ export const Project: React.FC = () => {
                         </Box>
                     </Stack>
                 </Grid>
-                <Grid lg={3.675} xl={3.675}>
+                <Grid item xs={12} sm={12} md={7} lg={3.675} xl={3.675}>
                     <Box display="flex" justifyContent="left">
                         <Image src={im3} alt="" style={{ width: '98%', height: 'auto' }}/>
                     </Box>
                 </Grid>
-                <Grid lg={2.215} xl={2.215}>
-                    <Box display="flex" justifyContent="left">
-                        <Image src={im4} alt="" style={{ width: '98%', height: 'auto' }}/>
-                    </Box>
+                <Grid item xs={12} sm={12} md={4.25} lg={2.215} xl={2.215}>
+                    <Image src={im4} alt="" style={{ width: '98%', height: 'auto' }}/>
                 </Grid>
             </Grid>
 
 
-            <Grid container spacing={6}>
-                <Grid lg={3.55} xl={3.55}>
+            <Grid container justifyContent="space-between" alignItems="center" rowSpacing={2}>
+                <Grid item xs={12} sm={12} md={6.5} lg={3.57} xl={3.57}>
                     <Image onClick={() => handleOpen(1)} src={im5} alt="" style={{ width: '98%', height: 'auto' }}/>
                     <Modal
                         open={open1}
@@ -256,7 +252,7 @@ export const Project: React.FC = () => {
                         </Stack>
                     </Modal>
                 </Grid>
-                <Grid lg={3.05} xl={3.05}>
+                <Grid item xs={12} sm={12} md={5.5} lg={2.9} xl={2.9}>
                     <Stack spacing={5.25}>
                         <Box>
                             <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"#EF4122"}} />
@@ -290,7 +286,7 @@ export const Project: React.FC = () => {
                         </Modal>
                     </Stack>
                 </Grid>
-                <Grid lg={2.15} xl={2.15}>
+                <Grid item xs={12} sm={12} md={5} lg={2.16} xl={2.16}>
                     <Image onClick={() => handleOpen(3)} src={im7} alt="" style={{ width: '98%', height: 'auto' }}/>
                     <Modal
                         open={open3}
@@ -315,7 +311,7 @@ export const Project: React.FC = () => {
                         </Stack>
                     </Modal>
                 </Grid>
-                <Grid lg={2.97} xl={2.97}>
+                <Grid item xs={12} sm={12} md={7} lg={2.84} xl={2.84}>
                     <Stack spacing={2}>
                     <Box display="flex" justifyContent="right">
                             <Link href="https://www.instagram.com/fifthatrium/">
@@ -350,8 +346,8 @@ export const Project: React.FC = () => {
             </Grid>
 
 
-            <Grid container spacing={6}>
-                <Grid lg={2.95} xl={2.95}>
+            <Grid container justifyContent="space-between" alignItems="center" rowSpacing={2}>
+                <Grid item xs={12} sm={12} md={7} lg={2.87} xl={2.87}>
                     <Stack spacing={2.85}>
                         <Box>
                             <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"red"}} />
@@ -366,10 +362,10 @@ export const Project: React.FC = () => {
                         <Image src={im9} alt="" style={{ width: '98%', height: 'auto' }}/>
                     </Stack>
                 </Grid>
-                <Grid lg={2.15} xl={2.15}>
+                <Grid item xs={12} sm={12} md={5} lg={2.20} xl={2.20}>
                     <Image src={im10} alt="" style={{ width: '98%', height: 'auto' }}/>
                 </Grid>
-                <Grid lg={3.07} xl={3.07}>
+                <Grid item xs={12} sm={12} md={5.5} lg={3.02} xl={3.02}>
                     <Stack spacing={1}>
                     <Box display="flex" justifyContent="right">
                             <Link href="https://www.instagram.com/fifthatrium/">
@@ -379,20 +375,20 @@ export const Project: React.FC = () => {
                         <Image src={im11} alt="" style={{ width: '98%', height: 'auto' }}/>
                     </Stack>
                 </Grid>
-                <Grid lg={3.6} xl={3.6}>
+                <Grid item xs={12} sm={12} md={6.5} lg={3.68} xl={3.68}>
                     <Image src={im12} alt="" style={{ width: '98%', height: 'auto' }}/>
                 </Grid>
             </Grid>
 
 
-            <Grid container spacing={6}>
-                <Grid lg={2.15} xl={2.15}>
+            <Grid container justifyContent="space-between" alignItems="center" rowSpacing={2}>
+                <Grid item xs={12} sm={12} md={4.5} lg={2.25} xl={2.25}>
                     <Image src={im13} alt="" style={{ width: '98%', height: 'auto' }}/>
                 </Grid>
-                <Grid lg={3.55} xl={3.55}>
+                <Grid item xs={12} sm={12} md={7.5} lg={3.75} xl={3.75}>
                     <Image src={im14} alt="" style={{ width: '98%', height: 'auto' }}/>
                 </Grid>
-                <Grid lg={2.93} xl={2.95}>
+                <Grid item xs={12} sm={12} md={6} lg={2.95} xl={2.95}>
                     <Stack spacing={2.85}>
                         <Box>
                             <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"red"}} />
@@ -407,7 +403,7 @@ export const Project: React.FC = () => {
                         <Image src={im15} alt="" style={{ width: '98%', height: 'auto' }}/>
                     </Stack>
                 </Grid>
-                <Grid lg={3.03} xl={3.03}>
+                <Grid item xs={12} sm={12} md={6} lg={3.05} xl={3.05}>
                     <Stack spacing={1}>
                     <Box display="flex" justifyContent="right">
                             <Link href="https://www.instagram.com/fifthatrium/">
