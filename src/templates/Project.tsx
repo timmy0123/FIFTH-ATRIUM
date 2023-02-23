@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Box, Stack, Modal, Grid } from "@mui/material";
+import {  createTheme, ThemeProvider, Typography } from "@material-ui/core";
 import ReactPlayer from 'react-player';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
@@ -24,8 +25,71 @@ import im13 from "../../picture/13.png";
 import im14 from "../../picture/14.png";
 import im15 from "../../picture/15.png";
 import im16 from "../../picture/16.png";
+import { breakpoints } from '@mui/system';
+import { styled } from "@mui/material/styles";
+
+const theme = createTheme({
+    breakpoints: {
+        values: {
+          xs: 0,
+          sm: 600,
+          md: 900,
+          lg: 1200,
+          xl: 1536,
+        },
+      },
+    typography: {
+      fontFamily: ["Montserrat", "sans-serif"].join(","),
+    },
+});
+
+theme.typography.h3 = {
+    fontSize: "1.7rem",
+    [theme.breakpoints.up('sm')]: {
+        fontSize: '3rem',
+    },
+    [theme.breakpoints.up('md')]: {
+        fontSize: '4rem',
+      },
+    [theme.breakpoints.up('lg')]: {
+        fontSize: '4rem',
+      },
+
+}
+
+theme.typography.h4 = {
+    fontSize: "1.7rem",
+    [theme.breakpoints.up('sm')]: {
+        fontSize: '2.5rem',
+    },
+    [theme.breakpoints.up('md')]: {
+        fontSize: '2.5rem',
+      },
+    [theme.breakpoints.up('lg')]: {
+        fontSize: '2.5rem',
+      },
+
+}
 
 
+const Icon = styled("div")(({ theme }) => ({
+    marginRight: theme.spacing(1),
+    [theme.breakpoints.up("xs")]: {
+        '& svg': {
+            fontSize: 20
+          }
+    },
+    [theme.breakpoints.up("md")]: {
+        '& svg': {
+            fontSize: 30
+          }
+    },
+    [theme.breakpoints.up("lg")]: {
+        '& svg': {
+            fontSize: 30
+          }
+    },
+  }));
 
 export const Project: React.FC = () => {
     const [open1, setOpen1] = React.useState(false);
@@ -55,94 +119,86 @@ export const Project: React.FC = () => {
         } 
     };
     return(
+        <ThemeProvider theme = {theme}>
         <Stack sx={{ bgcolor: '#DAD5D2' }} >
         <Box marginX={2} marginY={10}>
         <Stack spacing={10}>
             <Grid container>
-                <Grid item xs={4.8} sm={4.8} md={4.8} lg={4.8} xl={4.8}><a></a></Grid>
-                <Grid item xs={7} sm={7} md={7} lg={7} xl={7}>
+                <Grid item xs={2.8} sm={2.8} md={4.8} lg={4.8} xl={4.8}><a></a></Grid>
+                <Grid item xs={9} sm={9} md={7} lg={7} xl={7}>
                     <Box display="flex" justifyContent="left" sx={{ fontSize: 50, color:"#EF4122"}}> 
-                        LIFE IS
+                        <Typography variant='h3'>LIFE IS</Typography>
                     </Box>
                 </Grid>
-                <Grid item xs={5.25} sm={5.25} md={5.25}  lg={5.25} xl={5.25}><a></a></Grid>
-                <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+                <Grid item xs={4} sm={4} md={5.25}  lg={5.25} xl={5.25}><a></a></Grid>
+                <Grid item xs={8} sm={8} md={6} lg={6} xl={6}>
                     <Box display="flex" justifyContent="left" sx={{ fontSize: 50, color:"#EF4122"}}>
-                        OUR STORIES
+                    <Typography variant='h3'>OUR STORIES</Typography>
                     </Box>
                 </Grid>
-                <Grid item xs={5} sm={5} md={5} lg={5} xl={5}><a></a></Grid>
-                <Grid item xs={7} sm={7} md={7} lg={7} xl={7}>
+                <Grid item xs={3} sm={3} md={5} lg={5} xl={5}><a></a></Grid>
+                <Grid item xs={9} sm={9} md={7} lg={7} xl={7}>
                     <Box display="flex" justifyContent="left" sx={{ fontSize: 50, color:"#EF4122"}}>
-                        AND
+                    <Typography variant='h3'>AND</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                     <Box display="flex" justifyContent="center" sx={{ fontSize: 50, color:"#EF4122"}}>
-                        WE BRING YOUR STORY
+                        <Typography variant='h3'>WE BRING YOUR STORY</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={6.5} sm={6.5} md={6.5} lg={6.5} xl={6.5}><a></a></Grid>
                 <Grid item xs={5} sm={5} md={5}  lg={5} xl={5}>
                     <Box display="flex" justifyContent="left" sx={{ fontSize: 50, color:"#EF4122"}}>
-                        To LIFE
+                        <Typography variant='h3'>To LIFE</Typography>
                     </Box>
                 </Grid>
             </Grid>
 
 
-            <Grid container>
-                <Grid item xs={1} sm={1} md={1} lg={1} xl={1}><a></a></Grid>
-                <Grid item xs={11} sm={11} md={11} lg={5} xl={5}>
-                    <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
-                        <FiberManualRecordIcon sx={{ fontSize: 35}}/>
-                        <Box sx={{ fontSize: 35}}>
-                            Brand Identity
-                        </Box>
-                    </Stack>
-                </Grid>
-                <Grid item xs={4} sm={4} md={4} lg={1} xl={1}><a></a></Grid>
-                <Grid item xs={8} sm={8} md={8} lg={5} xl={5}>
-                    <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
-                        <FiberManualRecordIcon sx={{ fontSize: 35}}/>
-                        <Box sx={{ fontSize: 35}}>
-                            Logo Animation
-                        </Box>
-                    </Stack>
-                </Grid>
-
-
-                <Grid item xs={2} sm={2} md={2} lg={1.5} xl={1.5}><a></a></Grid>
-                <Grid item xs={10} sm={10} md={10} lg={3} xl={3}>
-                    <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
-                        <FiberManualRecordIcon sx={{ fontSize: 35}}/>
-                        <Box sx={{ fontSize: 35}}>
-                            Title Design
-                        </Box>
-                    </Stack>
-                </Grid>
+            <Grid container justifyContent="center">
                 <Grid item xs={1} sm={1} md={1} lg={2} xl={2}><a></a></Grid>
-                <Grid item xs={11} sm={11} md={11} lg={5.5} xl={5.5}>
-                    <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
-                        <FiberManualRecordIcon sx={{ fontSize: 35}}/>
-                        <Box sx={{ fontSize: 35}}>
-                            Film/Project Pitch Deck
-                        </Box>
-                    </Stack>
+                <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
+                    <Icon><FiberManualRecordIcon/></Icon>
+                </Grid>
+                <Grid item xs={10} sm={10} md={10} lg={4} xl={4}>
+                    <Typography variant='h4'>Brand Identity</Typography>
+                </Grid>
+                
+                <Grid item xs={3.5} sm={3.5} md={4} lg={1} xl={1}><a></a></Grid>
+                <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
+                    <Icon><FiberManualRecordIcon/></Icon>
+                </Grid>
+                <Grid item xs={7} sm={7} md={6} lg={4} xl={4}>
+                    <Typography variant='h4'>Logo Animation</Typography>
                 </Grid>
 
 
+                <Grid item xs={2} sm={2} md={2} lg={2.5} xl={2.5}><a></a></Grid>
+                <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
+                    <Icon><FiberManualRecordIcon/></Icon>
+                </Grid>
+                <Grid item xs={9} sm={9} md={9} lg={2} xl={2}>
+                    <Typography variant='h4'>Title Design</Typography>
+                </Grid>
                 <Grid item xs={1} sm={1} md={1} lg={1} xl={1}><a></a></Grid>
-                <Grid item xs={11} sm={11} md={11} lg={3} xl={3}>
-                    <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
-                        <FiberManualRecordIcon sx={{ fontSize: 35}}/>
-                        <Box sx={{ fontSize: 35}}>
-                            Animation
-                        </Box>
-                    </Stack>
+                <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
+                    <Icon><FiberManualRecordIcon/></Icon>
+                </Grid>
+                <Grid item xs={9} sm={9} md={10} lg={5} xl={5}>
+                    <Typography variant='h4'>Film/Project Pitch Deck</Typography>
+                </Grid>
+
+
+                <Grid item xs={1} sm={1} md={1} lg={2} xl={2}><a></a></Grid>
+                <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
+                    <Icon><FiberManualRecordIcon/></Icon>
+                </Grid>
+                <Grid item xs={8} sm={8} md={6} lg={2} xl={2}>
+                    <Typography variant='h4'>Animation</Typography>
                 </Grid>
                 <Grid item xs={3} sm={3} md={3} lg={2} xl={2}><a></a></Grid>
-                <Grid item xs={9} sm={9} md={9} lg={6} xl={6}>
+                <Grid item xs={9} sm={9} md={9} lg={4} xl={4}>
                     <Stack display="flex" justifyContent="cleftenter" sx={{ flexDirection: {sx: "column", md: "row"}}}>
                         <FiberManualRecordIcon sx={{ fontSize: 35}}/>
                         <Box sx={{ fontSize: 35}}>
@@ -417,4 +473,5 @@ export const Project: React.FC = () => {
         </Stack>
         </Box>
         </Stack>
+        </ThemeProvider>
 );}

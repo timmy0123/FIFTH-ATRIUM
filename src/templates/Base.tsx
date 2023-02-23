@@ -2,7 +2,7 @@ import { Layout } from "../components/layout";
 import { Project } from "./Project";
 import { About } from "./About";
 import { Contact } from "./Contact";
-import { createTheme,MuiThemeProvider } from "@material-ui/core/styles";
+import { createTheme,ThemeProvider } from "@material-ui/core/styles";
 
 
 const theme = createTheme({
@@ -14,19 +14,19 @@ const theme = createTheme({
         lg: 1200,
         xl: 1536,
       },
-    },
-  });
+    }
+});
 
 
 const Base = () => {
     return(
-        <MuiThemeProvider theme={theme}>
+        <ThemeProvider  theme={theme}>
             <Layout>
                 <Project />
                 <About />
                 <Contact />
             </Layout>
-        </MuiThemeProvider>
+        </ThemeProvider >
     );
 }
 
