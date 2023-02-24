@@ -244,13 +244,23 @@ export const Project: React.FC = () => {
                 <Grid item xs={12} sm={12} md={6} lg={2.8} xl={2.8}>
                     <Stack spacing={1}>
                         <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"#EF4122"}} />
-                        <Box display="flex" justifyContent="left" sx={{ fontSize: 30, color:"#EF4122"}}>
-                            BRAND
-                        </Box>
-                        <Box display="flex" justifyContent="left" sx={{ fontSize: 30, color:"#EF4122"}}>
-                            IDENTITY
-                        </Box>
-                        
+                        <Grid container>
+                            <Grid item xs={11} sm={11} md={12} lg={12} xl={12}>
+                                <Box display="flex" justifyContent="left" sx={{ fontSize: 30, color:"#EF4122"}}>
+                                    BRAND
+                                </Box>
+                                <Box display="flex" justifyContent="left" sx={{ fontSize: 30, color:"#EF4122"}}>
+                                    IDENTITY
+                                </Box>
+                            </Grid>
+                            <Grid item xs={1} sm={1} display={{xs:'block', sm:'block', md:'none', lg:'none', xl:'none'}}>
+                                <Box display="flex" justifyContent="right">
+                                    <Link href="https://www.instagram.com/fifthatrium/">
+                                        <ArrowOutwardIcon sx={{ fontSize: 70, color:"red"}}/>
+                                    </Link>
+                                </Box>
+                            </Grid>
+                        </Grid>
                         <Divider sx={{ borderBottomWidth: 3, width:"98%", borderColor:"#EF4122"}} />
                         
                         <Box display="flex" justifyContent="left">
@@ -260,7 +270,7 @@ export const Project: React.FC = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={2.8} xl={2.8}>
                     <Stack spacing={1}>
-                        <Box display="flex" justifyContent="right">
+                        <Box sx={{display: {xs:'none', sm:'none', md:'flex', lg:'flex', xl:'flex'}, justifyContent: "flex-end"}}>
                             <Link href="https://www.instagram.com/fifthatrium/">
                                 <ArrowOutwardIcon sx={{ fontSize: 70, color:"red"}}/>
                             </Link>
@@ -285,7 +295,7 @@ export const Project: React.FC = () => {
 
 
             <Grid container justifyContent="space-between" alignItems="center" rowSpacing={2}>
-                <Grid item xs={12} sm={12} md={6.5} lg={3.57} xl={3.57}>
+                <Grid item xs={12} sm={12} md={6.5} lg={3.57} xl={3.57} order={{xs:2, sm:2, md:1, lg:1, xl:1}}>
                     <Image onClick={() => handleOpen(1)} src={im5} alt="" style={{ width: '98%', height: 'auto' }}/>
                     <Modal
                         open={open1}
@@ -310,13 +320,24 @@ export const Project: React.FC = () => {
                         </Stack>
                     </Modal>
                 </Grid>
-                <Grid item xs={12} sm={12} md={5.5} lg={2.9} xl={2.9}>
+                <Grid item xs={12} sm={12} md={5.5} lg={2.9} xl={2.9} order={{xs:1, sm:1, md:2, lg:2, xl:2}}>
                     <Stack spacing={5.25}>
                         <Box>
                             <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"#EF4122"}} />
-                            <Box sx={{ fontSize: 30, color:'red'}}>
-                                ANIMATION
-                            </Box>
+                            <Grid container>
+                            <Grid item xs={11} sm={11} md={12} lg={12} xl={12}>
+                                <Box sx={{ fontSize: 30, color:'red'}}>
+                                    ANIMATION
+                                </Box>
+                            </Grid>
+                            <Grid item xs={1} sm={1} display={{xs:'block', sm:'block', md:'none', lg:'none', xl:'none'}}>
+                                <Box display="flex" justifyContent="right">
+                                    <Link href="https://www.instagram.com/fifthatrium/">
+                                        <ArrowOutwardIcon sx={{ fontSize: 70, color:"red"}}/>
+                                    </Link>
+                                </Box>
+                            </Grid>
+                            </Grid>
                             <Divider sx={{ borderBottomWidth: 3, width:"98%", borderColor:"#EF4122"}} />
                         </Box>
                         <Image onClick={() => handleOpen(2)} src={im6} alt="" style={{ width: '98%', height: 'auto' }}/>
@@ -344,7 +365,7 @@ export const Project: React.FC = () => {
                         </Modal>
                     </Stack>
                 </Grid>
-                <Grid item xs={12} sm={12} md={5} lg={2.16} xl={2.16}>
+                <Grid item xs={12} sm={12} md={5} lg={2.16} xl={2.16} order={{xs:3, sm:3, md:3, lg:3, xl:3}}>
                     <Image onClick={() => handleOpen(3)} src={im7} alt="" style={{ width: '98%', height: 'auto' }}/>
                     <Modal
                         open={open3}
@@ -369,9 +390,9 @@ export const Project: React.FC = () => {
                         </Stack>
                     </Modal>
                 </Grid>
-                <Grid item xs={12} sm={12} md={7} lg={2.84} xl={2.84}>
+                <Grid item xs={12} sm={12} md={7} lg={2.84} xl={2.84} order={{xs:4, sm:4, md:4, lg:4, xl:4}}>
                     <Stack spacing={2}>
-                    <Box display="flex" justifyContent="right">
+                        <Box sx={{display: {xs:'none', sm:'none', md:'flex', lg:'flex', xl:'flex'}, justifyContent: "flex-end"}}>
                             <Link href="https://www.instagram.com/fifthatrium/">
                                 <ArrowOutwardIcon sx={{ fontSize: 70, color:"red"}}/>
                             </Link>
@@ -409,12 +430,23 @@ export const Project: React.FC = () => {
                     <Stack spacing={2.85}>
                         <Box>
                             <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"red"}} />
-                            <Box sx={{ fontSize: 30, color:'red'}}>
-                                POSTER
-                            </Box>
-                            <Box sx={{ fontSize: 30, color:'red'}}>
-                                DESIGN
-                            </Box>
+                            <Grid container>
+                            <Grid item xs={11} sm={11} md={12} lg={12} xl={12}>
+                                <Box sx={{ fontSize: 30, color:'red'}}>
+                                    POSTER
+                                </Box>
+                                <Box sx={{ fontSize: 30, color:'red'}}>
+                                    DESIGN
+                                </Box>
+                                </Grid>
+                                <Grid item xs={1} sm={1} display={{xs:'block', sm:'block', md:'none', lg:'none', xl:'none'}}>
+                                    <Box display="flex" justifyContent="right">
+                                        <Link href="https://www.instagram.com/fifthatrium/">
+                                            <ArrowOutwardIcon sx={{ fontSize: 70, color:"red"}}/>
+                                        </Link>
+                                    </Box>
+                                </Grid>
+                            </Grid>
                             <Divider sx={{ borderBottomWidth: 3, width:"98%", borderColor:"red"}} />
                         </Box>
                         <Image src={im9} alt="" style={{ width: '98%', height: 'auto' }}/>
@@ -425,7 +457,7 @@ export const Project: React.FC = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={5.5} lg={3.02} xl={3.02}>
                     <Stack spacing={1}>
-                    <Box display="flex" justifyContent="right">
+                    <Box sx={{display: {xs:'none', sm:'none', md:'flex', lg:'flex', xl:'flex'}, justifyContent: "flex-end"}}>
                             <Link href="https://www.instagram.com/fifthatrium/">
                                 <ArrowOutwardIcon sx={{ fontSize: 70, color:'red'}}/>
                             </Link>
@@ -440,30 +472,41 @@ export const Project: React.FC = () => {
 
 
             <Grid container justifyContent="space-between" alignItems="center" rowSpacing={2}>
-                <Grid item xs={12} sm={12} md={4.5} lg={2.25} xl={2.25} order={{ md: 3, lg: 1 }}>
+                <Grid item xs={12} sm={12} md={4.5} lg={2.25} xl={2.25} order={{ xs: 3, lg: 1 }}>
                     <Image src={im13} alt="" style={{ width: '98%', height: 'auto' }}/>
                 </Grid>
-                <Grid item xs={12} sm={12} md={7.5} lg={3.75} xl={3.75} order={{ md: 4, lg: 2 }}>
+                <Grid item xs={12} sm={12} md={7.5} lg={3.75} xl={3.75} order={{ xs: 4, lg: 2 }}>
                     <Image src={im14} alt="" style={{ width: '98%', height: 'auto' }}/>
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={2.95} xl={2.95} order={{ md: 1, lg: 3 }}>
+                <Grid item xs={12} sm={12} md={6} lg={2.95} xl={2.95} order={{ xs: 1, lg: 3 }}>
                     <Stack spacing={2.85}>
                         <Box>
                             <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"red"}} />
-                            <Box sx={{ fontSize: 30, color:"red"}}>
-                                CAMPAIGN
-                            </Box>
-                            <Box sx={{ fontSize: 30, color:"red"}}>
-                                CREATION
-                            </Box>
+                            <Grid container>
+                            <Grid item xs={11} sm={11} md={12} lg={12} xl={12}>
+                                <Box sx={{ fontSize: 30, color:"red"}}>
+                                    CAMPAIGN
+                                </Box>
+                                <Box sx={{ fontSize: 30, color:"red"}}>
+                                    CREATION
+                                </Box>
+                                </Grid>
+                                <Grid item xs={1} sm={1} display={{xs:'block', sm:'block', md:'none', lg:'none', xl:'none'}}>
+                                    <Box display="flex" justifyContent="right">
+                                        <Link href="https://www.instagram.com/fifthatrium/">
+                                            <ArrowOutwardIcon sx={{ fontSize: 70, color:"red"}}/>
+                                        </Link>
+                                    </Box>
+                                </Grid>
+                            </Grid>
                             <Divider sx={{ borderBottomWidth: 3, width:"98%", borderColor:"red"}} />
                         </Box>
                         <Image src={im15} alt="" style={{ width: '98%', height: 'auto' }}/>
                     </Stack>
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={3.05} xl={3.05} order={{ md: 2, lg: 4 }}>
+                <Grid item xs={12} sm={12} md={6} lg={3.05} xl={3.05} order={{ xs: 2, lg: 4 }}>
                     <Stack spacing={1}>
-                    <Box display="flex" justifyContent="right">
+                    <Box sx={{display: {xs:'none', sm:'none', md:'flex', lg:'flex', xl:'flex'}, justifyContent: "flex-end"}}>
                             <Link href="https://www.instagram.com/fifthatrium/">
                                 <ArrowOutwardIcon sx={{ fontSize: 70, color:"red"}}/>
                             </Link>
