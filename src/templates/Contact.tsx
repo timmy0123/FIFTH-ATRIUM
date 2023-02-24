@@ -9,7 +9,7 @@ export const Contact: React.FC = () => (
     <Stack spacing={5}>
         <Grid container>
             <Grid sm={12} md={12} lg={12} xl={12}>
-                <Box display="flex" justifyContent="center">
+                <Box display="flex" justifyContent="center" sx={{'&:hover': {backgroundColor:"black",color:'#EF4122'}}}>
                     <Link href={"mailto:hello@fifthatrium.com"}>
                         <Typography sx={{textDecoration: 'underline', fontSize: 40}}>hello@fifthatrium.com</Typography>
                     </Link>

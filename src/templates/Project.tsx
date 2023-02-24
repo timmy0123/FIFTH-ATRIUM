@@ -33,7 +33,7 @@ const theme = createTheme({
         values: {
           xs: 0,
           sm: 600,
-          md: 900,
+          md: 800,
           lg: 1200,
           xl: 1536,
         },
@@ -44,7 +44,7 @@ const theme = createTheme({
 });
 
 theme.typography.h3 = {
-    fontSize: "1.7rem",
+    fontSize: "1.6rem",
     [theme.breakpoints.up('sm')]: {
         fontSize: '3rem',
     },
@@ -54,11 +54,14 @@ theme.typography.h3 = {
     [theme.breakpoints.up('lg')]: {
         fontSize: '4rem',
       },
+    [theme.breakpoints.up('xl')]: {
+        fontSize: '4rem',
+      },
 
 }
 
 theme.typography.h4 = {
-    fontSize: "1.7rem",
+    fontSize: "1.2rem",
     [theme.breakpoints.up('sm')]: {
         fontSize: '2.5rem',
     },
@@ -66,6 +69,9 @@ theme.typography.h4 = {
         fontSize: '2.5rem',
       },
     [theme.breakpoints.up('lg')]: {
+        fontSize: '2.5rem',
+    },
+    [theme.breakpoints.up('xl')]: {
         fontSize: '2.5rem',
       },
 
@@ -76,7 +82,7 @@ const Icon = styled("div")(({ theme }) => ({
     marginRight: theme.spacing(1),
     [theme.breakpoints.up("xs")]: {
         '& svg': {
-            fontSize: 20
+            fontSize: 15
           }
     },
     [theme.breakpoints.up("md")]: {
@@ -157,11 +163,11 @@ export const Project: React.FC = () => {
 
 
             <Grid container justifyContent="center">
-                <Grid item xs={1} sm={1} md={1} lg={2} xl={2}><a></a></Grid>
+                <Grid item xs={2} sm={2} md={2} lg={2} xl={2}><a></a></Grid>
                 <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
                     <Icon><FiberManualRecordIcon/></Icon>
                 </Grid>
-                <Grid item xs={10} sm={10} md={10} lg={4} xl={4}>
+                <Grid item xs={9.25} sm={9.25} md={9} lg={4} xl={4}>
                     <Typography variant='h4'>Brand Identity</Typography>
                 </Grid>
                 
@@ -169,7 +175,7 @@ export const Project: React.FC = () => {
                 <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
                     <Icon><FiberManualRecordIcon/></Icon>
                 </Grid>
-                <Grid item xs={7} sm={7} md={6} lg={4} xl={4}>
+                <Grid item xs={7.25} sm={7.25} md={6} lg={4} xl={4}>
                     <Typography variant='h4'>Logo Animation</Typography>
                 </Grid>
 
@@ -178,62 +184,58 @@ export const Project: React.FC = () => {
                 <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
                     <Icon><FiberManualRecordIcon/></Icon>
                 </Grid>
-                <Grid item xs={9} sm={9} md={9} lg={2} xl={2}>
+                <Grid item xs={9.25} sm={9.25} md={9} lg={2} xl={2}>
                     <Typography variant='h4'>Title Design</Typography>
                 </Grid>
                 <Grid item xs={1} sm={1} md={1} lg={1} xl={1}><a></a></Grid>
                 <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
                     <Icon><FiberManualRecordIcon/></Icon>
                 </Grid>
-                <Grid item xs={9} sm={9} md={10} lg={5} xl={5}>
+                <Grid item xs={10.25} sm={10.25} md={10} lg={5} xl={5}>
                     <Typography variant='h4'>Film/Project Pitch Deck</Typography>
                 </Grid>
 
 
-                <Grid item xs={1} sm={1} md={1} lg={2} xl={2}><a></a></Grid>
+                <Grid item xs={1} sm={1} md={1} lg={1.5} xl={1.5}><a></a></Grid>
                 <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
                     <Icon><FiberManualRecordIcon/></Icon>
                 </Grid>
-                <Grid item xs={8} sm={8} md={6} lg={2} xl={2}>
+                <Grid item xs={10.25} sm={10.25} md={8} lg={3} xl={3}>
                     <Typography variant='h4'>Animation</Typography>
                 </Grid>
                 <Grid item xs={3} sm={3} md={3} lg={2} xl={2}><a></a></Grid>
-                <Grid item xs={9} sm={9} md={9} lg={4} xl={4}>
-                    <Stack display="flex" justifyContent="cleftenter" sx={{ flexDirection: {sx: "column", md: "row"}}}>
-                        <FiberManualRecordIcon sx={{ fontSize: 35}}/>
-                        <Box sx={{ fontSize: 35}}>
-                            Motion Graphics
-                        </Box>
-                    </Stack>
+                <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
+                    <Icon><FiberManualRecordIcon/></Icon>
+                </Grid>
+                <Grid item xs={8.25} sm={8.25} md={8.25} lg={4.5} xl={4.5}>
+                    <Typography variant='h4'>Motion Graphics</Typography>
                 </Grid>
 
 
-                <Grid item sm={1} md={1} lg={1.5} xl={1.5}><a></a></Grid>
-                <Grid item sm={11} md={11} lg={4.5} xl={4.5}>
-                    <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
-                        <FiberManualRecordIcon sx={{ fontSize: 35}}/>
-                        <Box sx={{ fontSize: 35}}>
-                            Campaign Creation
-                        </Box>
-                    </Stack>
+                <Grid item xs={2} sm={2} md={2} lg={1.5} xl={1.5}><a></a></Grid>
+                <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
+                    <Icon><FiberManualRecordIcon/></Icon>
                 </Grid>
-                <Grid item sm={5} md={5} lg={2} xl={2}><a></a></Grid>
-                <Grid item sm={7} md={7} lg={4} xl={4}>
-                    <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
-                        <FiberManualRecordIcon sx={{ fontSize: 35}}/>
-                        <Box sx={{ fontSize: 35}}>
-                            Poster Design
-                        </Box>
-                    </Stack>
+                <Grid item xs={9.25} sm={9.25} md={9.25} lg={4.5} xl={4.5}>
+                    <Typography variant='h4'>Campaign Creation</Typography>
                 </Grid>
-                <Grid item sm={4} md={4} lg={1} xl={1}><a></a></Grid>
-                <Grid item sm={8} md={8} lg={6} xl={6}>
-                <Stack display="flex" justifyContent="left" sx={{ flexDirection: {sx: "column", md: "row"}}}>
-                    <FiberManualRecordIcon sx={{ fontSize: 35}}/>
-                    <Box sx={{ fontSize: 35}}>
-                        Explainer Video
-                    </Box>
-                </Stack>
+
+
+                <Grid item xs={2} sm={2} md={2} lg={1} xl={1}><a></a></Grid>
+                <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
+                    <Icon><FiberManualRecordIcon/></Icon>
+                </Grid>
+                <Grid item xs={9.25} sm={9.25} md={9.25} lg={3.5} xl={3.5}>
+                    <Typography variant='h4'>Poster Design</Typography>
+                </Grid>
+
+
+                <Grid item xs={3} sm={3} md={3} lg={1} xl={1}><a></a></Grid>
+                <Grid item xs={0.75} sm={0.75} md={0.35} lg={0.35} xl={0.35}>
+                    <Icon><FiberManualRecordIcon/></Icon>
+                </Grid>
+                <Grid item xs={8.25} sm={8.25} md={6} lg={4.5} xl={4.5}>
+                    <Typography variant='h4'>Explainer Video</Typography>
                 </Grid>
             </Grid>
 
@@ -438,13 +440,13 @@ export const Project: React.FC = () => {
 
 
             <Grid container justifyContent="space-between" alignItems="center" rowSpacing={2}>
-                <Grid item xs={12} sm={12} md={4.5} lg={2.25} xl={2.25}>
+                <Grid item xs={12} sm={12} md={4.5} lg={2.25} xl={2.25} order={{ md: 3, lg: 1 }}>
                     <Image src={im13} alt="" style={{ width: '98%', height: 'auto' }}/>
                 </Grid>
-                <Grid item xs={12} sm={12} md={7.5} lg={3.75} xl={3.75}>
+                <Grid item xs={12} sm={12} md={7.5} lg={3.75} xl={3.75} order={{ md: 4, lg: 2 }}>
                     <Image src={im14} alt="" style={{ width: '98%', height: 'auto' }}/>
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={2.95} xl={2.95}>
+                <Grid item xs={12} sm={12} md={6} lg={2.95} xl={2.95} order={{ md: 1, lg: 3 }}>
                     <Stack spacing={2.85}>
                         <Box>
                             <Divider sx={{ borderBottomWidth:3, width:"98%", borderColor:"red"}} />
@@ -459,7 +461,7 @@ export const Project: React.FC = () => {
                         <Image src={im15} alt="" style={{ width: '98%', height: 'auto' }}/>
                     </Stack>
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={3.05} xl={3.05}>
+                <Grid item xs={12} sm={12} md={6} lg={3.05} xl={3.05} order={{ md: 2, lg: 4 }}>
                     <Stack spacing={1}>
                     <Box display="flex" justifyContent="right">
                             <Link href="https://www.instagram.com/fifthatrium/">

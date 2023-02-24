@@ -13,7 +13,7 @@ export const About: React.FC = () =>{
         <Box marginX={4} marginY={5}>
         <Stack spacing={5}>
             <Grid container>
-                <Grid item sm={9} md={9} lg={10.75} xl={10.75}>
+                <Grid item sm={9} md={9} lg={10.75} xl={10.75} order={{ xs: 2, md: 1 }}>
                     <Stack spacing={75} sx={{width: "90%"}}>
                         <Box sx={{ fontSize: 50, color:"#EF4122"}}>ANIMATION AND DESIGN STUDIO</Box>
                         <Stack spacing={5}>
@@ -22,8 +22,15 @@ export const About: React.FC = () =>{
                         </Stack>
                     </Stack>
                 </Grid>
-                <Grid item sm={3} md={3} lg={1} xl={1}>
+                <Grid item sm={3} md={3} lg={1} xl={1} order={{ xs: 1, md: 2 }} display={{xs:'none', sm:'none', md:'block', lg:'block', xl:'block'}}>
                     <Box sx={{ fontSize: 100, color:"#EF4122",rotate: "90deg"}}>FIFTH ATRIUM</Box>
+                </Grid>
+                <Grid item xs={9} sm={9} md={0} lg={0} xl={0} order={{ xs: 1, md: 2 }} display={{xs:'block', sm:'block', md:'none', lg:'none', xl:'none'}}><a></a></Grid>
+                <Grid item xs={3} sm={3} md={0} lg={0} xl={0} order={{ xs: 1, md: 2 }} display={{xs:'block', sm:'block', md:'none', lg:'none', xl:'none'}}>
+                    <Stack spacing={15}>
+                        <Box sx={{ fontSize: 50, color:"#EF4122",rotate: "90deg"}}>FIFTH ATRIUM</Box>
+                        <a></a>
+                    </Stack>
                 </Grid>
             </Grid>
 

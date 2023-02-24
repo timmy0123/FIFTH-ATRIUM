@@ -22,9 +22,9 @@ const Base = () => {
     return(
         <ThemeProvider  theme={theme}>
             <Layout>
-                <Project />
-                <About />
-                <Contact />
+                <div id="Project"><Project /></div>
+                <div id="About"><About /></div>
+                <div id="Contact"><Contact /></div>
             </Layout>
         </ThemeProvider >
     );

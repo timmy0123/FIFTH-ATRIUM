@@ -1,4 +1,5 @@
 import { Box, Stack, Grid } from "@mui/material";
+import Link from 'next/link';
 
 export const Footer: React.FC = () => {
     return(
@@ -12,9 +13,9 @@ export const Footer: React.FC = () => {
                 </Grid>
                 <Grid item sm={5} md={5} lg={2} xl={2}>
                     <Stack spacing={2}>
-                        <Box sx={{fontSize:30, color:'white'}}>hello@fifthatrium.com</Box>
-                        <Box sx={{fontSize:30, color:'white'}}>INSTAGRAM</Box>
-                        <Box sx={{fontSize:30, color:'white'}}>FACEBOOK</Box>
+                        <Box sx={{fontSize:30, color:'white'}}><Link href={"mailto:hello@fifthatrium.com"}>hello@fifthatrium.com</Link></Box>
+                        <Box sx={{fontSize:30, color:'white'}}><Link href={"https://www.instagram.com/fifthatrium/"}>INSTAGRAM</Link></Box>
+                        <Box sx={{fontSize:30, color:'white'}}><Link href={"https://www.facebook.com/5thatrium/"}>FACEBOOK</Link></Box>
                     </Stack>
                 </Grid>
             </Grid>
