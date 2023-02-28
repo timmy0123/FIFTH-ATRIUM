@@ -27,6 +27,7 @@ import im15 from "../../picture/15.png";
 import im16 from "../../picture/16.png";
 import { breakpoints } from '@mui/system';
 import { styled } from "@mui/material/styles";
+import Logo from '../../picture/FIFTH ATRIUM-Logo-video.svg';
 
 const theme = createTheme({
     breakpoints: {
@@ -321,10 +322,14 @@ export const Project: React.FC = () => {
                         aria-describedby="parent-modal-description"
                     >
                         <Stack sx={{ width: "100%", height: "100%"  }}>
-                            <Stack sx={{ flexDirection: {md: "row"}}}>
-                                <Box sx={{ width: "98%", color:"white"}}><h1 id="parent-modal-title">FIFTH ATRIUM</h1></Box>
-                                <ArrowForwardIcon onClick={() => handleClose(1)} sx={{ fontSize:50, color:"white"}}/>
-                            </Stack>
+                            <Grid container>
+                                <Grid item xs={10} sm={10} md={11.5} lg={11.5} xl={11.5} >
+                                    <Logo width={250} height={50}/>
+                                </Grid>
+                                <Grid item xs={2} sm={2} md={0.5} lg={0.5} xl={0.5}>
+                                    <ArrowForwardIcon onClick={() => handleClose(1)} sx={{ fontSize:50, color:"white"}}/>
+                                </Grid>
+                            </Grid>
                             <Box display="flex" justifyContent="center" sx={{ width: "100%", height: "100%"  }}>
                                 <ReactPlayer
                                     width="100%"
@@ -365,10 +370,14 @@ export const Project: React.FC = () => {
                             aria-describedby="parent-modal-description"
                         >
                             <Stack sx={{ width: "100%", height: "100%"  }}>
-                                <Stack sx={{ flexDirection: {md: "row"}}}>
-                                    <Box sx={{ width: "98%", color:"white"}}><h1 id="parent-modal-title">FIFTH ATRIUM</h1></Box>
-                                    <ArrowForwardIcon onClick={() => handleClose(2)} sx={{ fontSize:50, color:"white"}}/>
-                                </Stack>
+                                <Grid container>
+                                    <Grid item xs={10} sm={10} md={11.5} lg={11.5} xl={11.5} >
+                                        <Logo width={250} height={50}/>
+                                    </Grid>
+                                    <Grid item xs={2} sm={2} md={0.5} lg={0.5} xl={0.5}>
+                                        <ArrowForwardIcon onClick={() => handleClose(2)} sx={{ fontSize:50, color:"white"}}/>
+                                    </Grid>
+                                </Grid>
                                 <Box display="flex" justifyContent="center" sx={{ width: "100%", height: "100%"  }}>
                                     <ReactPlayer
                                         width="100%"
@@ -391,10 +400,14 @@ export const Project: React.FC = () => {
                         aria-describedby="parent-modal-description"
                     >
                         <Stack sx={{ width: "100%", height: "100%"  }}>
-                            <Stack sx={{ flexDirection: {md: "row"}}}>
-                                <Box sx={{ width: "98%", color:"white"}}><h1 id="parent-modal-title">FIFTH ATRIUM</h1></Box>
-                                <ArrowForwardIcon onClick={() => handleClose(3)} sx={{ fontSize:50, color:"white"}}/>
-                            </Stack>
+                            <Grid container>
+                                <Grid item xs={10} sm={10} md={11.5} lg={11.5} xl={11.5} >
+                                    <Logo width={250} height={50}/>
+                                </Grid>
+                                <Grid item xs={2} sm={2} md={0.5} lg={0.5} xl={0.5}>
+                                    <ArrowForwardIcon onClick={() => handleClose(3)} sx={{ fontSize:50, color:"white"}}/>
+                                </Grid>
+                            </Grid>
                             <Box display="flex" justifyContent="center" sx={{ width: "100%", height: "100%"  }}>
                                 <ReactPlayer
                                     width="100%"
@@ -422,10 +435,14 @@ export const Project: React.FC = () => {
                             aria-describedby="parent-modal-description"
                         >
                             <Stack sx={{ width: "100%", height: "100%"  }}>
-                                <Stack sx={{ flexDirection: {md: "row"}}}>
-                                    <Box sx={{ width: "98%", color:"white"}}><h1 id="parent-modal-title">FIFTH ATRIUM</h1></Box>
-                                    <ArrowForwardIcon onClick={() => handleClose(4)} sx={{ fontSize:50, color:"white"}}/>
-                                </Stack>
+                                <Grid container>
+                                    <Grid item xs={10} sm={10} md={11.5} lg={11.5} xl={11.5} >
+                                        <Logo width={250} height={50}/>
+                                    </Grid>
+                                    <Grid item xs={2} sm={2} md={0.5} lg={0.5} xl={0.5}>
+                                        <ArrowForwardIcon onClick={() => handleClose(4)} sx={{ fontSize:50, color:"white"}}/>
+                                    </Grid>
+                                </Grid>
                                 <Box display="flex" justifyContent="center" sx={{ width: "100%", height: "100%"  }}>
                                     <ReactPlayer
                                         width="100%"
